@@ -1,0 +1,116 @@
+/* Body Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #1d1f21, #282c34);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+    background: #2c2f33;
+    border-radius: 15px;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Calculator Screen */
+.calculator-screen {
+    background: #1d1f21;
+    color: #61dafb;
+    height: 70px;
+    text-align: right;
+    padding: 20px;
+    font-size: 28px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Calculator Buttons */
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.key {
+    background: #2f3136;
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.key:hover {
+    background: #40444b;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.operator {
+    background: #7289da;
+    color: #ffffff;
+}
+
+.operator:hover {
+    background: #677bc4;
+}
+
+.key[data-action="clear"] {
+    background: #e74c3c;
+    color: #ffffff;
+}
+
+.key[data-action="delete"] {
+    background: #f39c12;
+    color: #ffffff;
+}
+
+.key.equals {
+    background: #27ae60;
+    color: #ffffff;
+    grid-column: span 2;
+}
+
+.key.equals:hover {
+    background: #219150;
+}
+
+/* Toggle Button */
+.toggle-button {
+    background: #61dafb;
+    color: #2c2f33;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+    background: #52bcd4;
+}
+
+.hidden {
+    display: none;
+}
